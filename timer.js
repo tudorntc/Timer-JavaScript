@@ -14,3 +14,8 @@ function resetTimer() {
   clearInterval(timerInterval);
   updateTimerDisplay();
 }
+
+function incrementTimer() {
+  seconds++;
+  updateTimerDisplay();
+}
