@@ -8,3 +8,9 @@ function startTimer() {
 function stopTimer() {
   clearInterval(timerInterval);
 }
+
+function resetTimer() {
+  seconds = 0;
+  clearInterval(timerInterval);
+  updateTimerDisplay();
+}
