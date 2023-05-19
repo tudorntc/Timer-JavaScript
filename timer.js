@@ -19,3 +19,7 @@ function incrementTimer() {
   seconds++;
   updateTimerDisplay();
 }
+
+function updateTimerDisplay() {
+  console.log(formatTime(seconds));
+}
