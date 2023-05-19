@@ -23,3 +23,17 @@ function incrementTimer() {
 function updateTimerDisplay() {
   console.log(formatTime(seconds));
 }
+
+
+function formatTime(timeInSeconds) {
+  const minutes = Math.floor(timeInSeconds / 60);
+  const seconds = timeInSeconds % 60;
+  return `${padZero(minutes)}:${padZero(seconds)}`;
+}
+
+function padZero(number) {
+  return number.toString().padStart(2, '0');
+}
+
+// Usage
+startTimer();
